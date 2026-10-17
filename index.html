@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Облака — глэмпинг в горах Алтая</title>
+  <meta name="description" content="Глэмпинг «Облака» на Алтае: домики с панорамными окнами, банный чан под звёздами, баня на дровах. Онлайн-бронирование и расчёт стоимости.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Шапка ===== -->
+  <header class="header" id="header">
+    <a href="#top" class="logo">OBLAKA<small>глэмпинг · алтай</small></a>
+    <nav class="nav" id="nav">
+      <a href="#about">О месте</a>
+      <a href="#houses">Домики</a>
+      <a href="#day">Ваш день</a>
+      <a href="#book">Цены</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <span class="header__year">2026</span>
+    <button class="burger" id="burger" type="button" aria-label="Меню"><i></i><i></i></button>
+  </header>
+
+  <main id="top">
+    <!-- ===== Первый экран ===== -->
+    <section class="hero">
+      <img class="hero__bg" src="img/hero.jpg" alt="Деревянный домик на скале в лучах заката">
+      <div class="hero__shade"></div>
+      <h1 class="hero__title"><span>OBLAKA</span></h1>
+
+      <div class="hero__bottom">
+        <div class="glass status">
+          <div class="status__head"><span>Свободно на выходные</span><b id="free-count">3 из 8</b></div>
+          <div class="status__bar"><i style="width:62%"></i></div>
+          <p>Площадь домиков от 24 до 58 м²</p>
+          <p>Алтай, 40 км от Чемала</p>
+        </div>
+
+        <div class="hero__welcome">
+          <h2>Добро пожаловать<br>в «Облака»</h2>
+          <p>Восемь домиков среди кедров, панорамные окна в горы, банный чан под звёздами. Здесь не нужен будильник и почти не ловит связь.</p>
+          <a href="#houses" class="btn btn--light">Выбрать домик <span>→</span></a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll">листайте вниз</a>
+    </section>
+
+    <!-- ===== О месте ===== -->
+    <section class="about" id="about">
+      <div class="wrap about__grid">
+        <div class="about__intro">
+          <p class="eyebrow">О месте</p>
+          <h2 class="title">Глэмпинг, где горы <em>за&nbsp;стеклом</em></h2>
+          <p class="muted">Мы построили «Облака» на склоне над долиной Катуни, чтобы из каждого домика было видно горы. Внутри всё как в хорошем отеле: большая кровать, тёплый пол, душ и кофемашина. Снаружи — тайга, туман по утрам и тишина.</p>
+        </div>
+        <figure class="about__photo reveal"><img src="img/h-aframe.jpg" alt="Домик A-frame с панорамным остеклением"></figure>
+        <figure class="about__mini reveal"><img src="img/in-bed.jpg" alt="Кровать у панорамного окна с видом на лес"></figure>
+      </div>
+      <div class="wrap stats">
+        <div class="stat glass-dark"><b data-count="8">0</b><span>домиков на 2,5 гектарах леса</span></div>
+        <div class="stat glass-dark"><b data-count="1200">0</b><span>метров над уровнем моря</span></div>
+        <div class="stat glass-dark"><b data-count="4.9" data-dec="1">0</b><span>средняя оценка гостей</span></div>
+        <div class="stat glass-dark"><b data-count="150">0</b><span>метров между домиками</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Преимущества ===== -->
+    <section class="perks">
+      <div class="wrap">
+        <div class="perks__head">
+          <p class="eyebrow">Приватность и простор</p>
+          <h2 class="title">Ваш личный уголок природы</h2>
+        </div>
+        <div class="perks__row" id="perks">
+          <article class="perk active">
+            <img src="img/in-view.jpg" alt="">
+            <div class="perk__body"><span>/01</span><h3>Панорамные окна</h3><p>Стеклянная стена во всю высоту домика. Просыпаетесь — а за окном облака цепляются за вершины.</p></div>
+          </article>
+          <article class="perk">
+            <img src="img/tub.jpg" alt="">
+            <div class="perk__body"><span>/02</span><h3>Чан под звёздами</h3><p>Горячий кедровый чан у каждого домика. Вода +40°, вокруг снег или летняя ночь.</p></div>
+          </article>
+          <article class="perk">
+            <img src="img/sauna.jpg" alt="">
+            <div class="perk__body"><span>/03</span><h3>Баня на дровах</h3><p>Финская баня с окном в лес. Веники, травяной чай и купель с ледяной водой.</p></div>
+          </article>
+          <article class="perk">
+            <img src="img/stars.jpg" alt="">
+            <div class="perk__body"><span>/04</span><h3>Небо без засветки</h3><p>Ближайший город в 90 км. Ночью виден Млечный путь, а в августе — звездопад.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Домики ===== -->
+    <section class="houses" id="houses">
+      <div class="wrap">
+        <div class="houses__head">
+          <div>
+            <p class="eyebrow">Домики</p>
+            <h2 class="title">Современный комфорт<br><em>в сердце природы</em></h2>
+          </div>
+          <div class="tabs" id="house-tabs">
+            <button class="tab active" type="button" data-filter="all">Все</button>
+            <button class="tab" type="button" data-filter="2">Для двоих</button>
+            <button class="tab" type="button" data-filter="4">Для семьи</button>
+          </div>
+        </div>
+        <div class="houses__grid" id="house-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Большая надпись ===== -->
+    <section class="banner">
+      <img class="banner__bg" src="img/mist.jpg" alt="">
+      <div class="banner__shade"></div>
+      <div class="wrap banner__in">
+        <div class="glass banner__card">
+          <img src="img/lake.jpg" alt="Горное озеро с бирюзовой водой">
+          <ul>
+            <li>Гейзерное озеро — 25 минут на машине</li>
+            <li>Чемальская ГЭС и остров Патмос — 40 минут</li>
+            <li>Тропа к водопаду прямо от ворот</li>
+            <li>Конные прогулки и рафтинг по Катуни</li>
+          </ul>
+        </div>
+        <p class="banner__text">Жизнь в горах — это не просто смена обстановки. Это шанс выдохнуть, выключить уведомления и вспомнить, как пахнет кедр после дождя.</p>
+      </div>
+      <div class="banner__word">OBLAKA · OBLAKA</div>
+    </section>
+
+    <!-- ===== Ваш день ===== -->
+    <section class="day" id="day">
+      <div class="wrap">
+        <div class="day__head">
+          <h2 class="title">Ваш день<br><em>в горах</em></h2>
+          <p class="muted">Нажмите на этап, чтобы посмотреть, как проходит отдых в «Облаках».</p>
+        </div>
+        <div class="day__grid">
+          <ol class="steps" id="steps">
+            <li class="active" data-img="img/h-night.jpg" data-time="14:00" data-text="Встречаем у шлагбаума, помогаем с вещами и проводим к домику. В холодильнике уже ждут фермерский сыр, мёд и травяной чай.">Заезд</li>
+            <li data-img="img/valley.jpg" data-time="16:00" data-text="Тропа к водопаду начинается прямо у ворот. 40 минут неспешным шагом, по пути — смотровая площадка над долиной.">Прогулка</li>
+            <li data-img="img/sauna-cube.jpg" data-time="19:00" data-text="Баня уже натоплена. Парьтесь сколько хотите, она закреплена за вами на весь вечер.">Баня</li>
+            <li data-img="img/fire.jpg" data-time="21:00" data-text="Ужин у костра: мясо на углях, печёная картошка, глинтвейн. Можно заказать или приготовить самим.">Костёр</li>
+            <li data-img="img/swim.jpg" data-time="23:00" data-text="Чан разогрет до +40°. Гасите свет на террасе и смотрите на звёзды, пока не начнут слипаться глаза.">Чан и звёзды</li>
+          </ol>
+          <figure class="step-view">
+            <img id="step-img" src="img/h-night.jpg" alt="">
+            <figcaption class="glass">
+              <b id="step-time">14:00</b>
+              <p id="step-text">Встречаем у шлагбаума, помогаем с вещами и проводим к домику. В холодильнике уже ждут фермерский сыр, мёд и травяной чай.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Калькулятор ===== -->
+    <section class="book" id="book">
+      <div class="wrap book__grid">
+        <div>
+          <p class="eyebrow">Цены и бронирование</p>
+          <h2 class="title">Посчитайте<br><em>свой отдых</em></h2>
+          <p class="muted">Цена за ночь указана за весь домик, а не за человека. Завтрак и парковка уже включены.</p>
+          <div class="book__photo"><img src="img/lights.jpg" alt=""></div>
+        </div>
+
+        <form class="calc glass-dark" id="calc" novalidate>
+          <p class="label">Домик</p>
+          <div class="chips" id="calc-house"></div>
+
+          <div class="calc__row">
+            <div>
+              <p class="label">Дата заезда</p>
+              <input class="input" type="date" id="calc-date">
+            </div>
+            <div>
+              <p class="label">Ночей</p>
+              <div class="stepper"><button type="button" data-step="nights" data-d="-1">−</button><b id="nights">2</b><button type="button" data-step="nights" data-d="1">+</button></div>
+            </div>
+            <div>
+              <p class="label">Гостей</p>
+              <div class="stepper"><button type="button" data-step="guests" data-d="-1">−</button><b id="guests">2</b><button type="button" data-step="guests" data-d="1">+</button></div>
+            </div>
+          </div>
+
+          <p class="label">Дополнительно</p>
+          <div class="extras" id="extras">
+            <label><input type="checkbox" value="tub"><span>Банный чан<small>3 000 ₽ за вечер</small></span></label>
+            <label><input type="checkbox" value="sauna"><span>Баня на дровах<small>2 500 ₽ за вечер</small></span></label>
+            <label><input type="checkbox" value="dinner"><span>Ужин у костра<small>1 200 ₽ за гостя</small></span></label>
+            <label><input type="checkbox" value="horse"><span>Конная прогулка<small>2 000 ₽ за гостя</small></span></label>
+          </div>
+
+          <div class="calc__total">
+            <div><span>Итого</span><b id="total">0 ₽</b><small id="total-note"></small></div>
+            <button class="btn btn--light" type="submit">Забронировать <span>→</span></button>
+          </div>
+          <p class="error" id="calc-error"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Вопросы ===== -->
+    <section class="faq" id="faq">
+      <div class="wrap faq__grid">
+        <h2 class="title">Частые<br><em>вопросы</em></h2>
+        <div class="acc" id="acc">
+          <details open><summary>Как до вас добраться?</summary><p>От Горно-Алтайска 1,5 часа на машине по асфальту, последние 3 км — хорошая грунтовка. Можем встретить в аэропорту за 3 500 ₽.</p></details>
+          <details><summary>Можно с детьми и собакой?</summary><p>С детьми — конечно, в семейных домиках есть второй ярус. Собак принимаем в домике «Кедр», доплата 1 000 ₽ за ночь.</p></details>
+          <details><summary>Есть ли связь и интернет?</summary><p>В домиках работает Wi-Fi через спутник, его хватает на мессенджеры и музыку. Мобильная связь — только у главного дома.</p></details>
+          <details><summary>Как отменить бронь?</summary><p>Бесплатно, если до заезда больше 7 дней. Позже — переносим даты без доплаты.</p></details>
+          <details><summary>Работаете зимой?</summary><p>Да, круглый год. Зимой домики отапливаются, а чан в снегу — самое популярное у гостей.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Финал ===== -->
+    <section class="cta">
+      <img class="cta__bg" src="img/h-lake.jpg" alt="">
+      <div class="cta__shade"></div>
+      <div class="wrap cta__in">
+        <h2>Готовы сбежать<br>в горы?</h2>
+        <a href="#book" class="btn btn--light">Забронировать домик <span>→</span></a>
+      </div>
+      <div class="wrap cta__foot">
+        <span>oblaka-altai.ru</span>
+        <span>Республика Алтай, Чемальский район</span>
+        <span>+7 (900) 000-00-00</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Окно домика -->
+  <div class="modal" id="house-modal" aria-hidden="true">
+    <div class="modal__box modal__box--wide">
+      <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+      <div class="hm" id="hm"></div>
+    </div>
+  </div>
+
+  <!-- Окно брони -->
+  <div class="modal" id="done-modal" aria-hidden="true">
+    <div class="modal__box">
+      <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+      <form id="contact-form" novalidate>
+        <p class="eyebrow">Почти готово</p>
+        <h3>Оставьте контакты</h3>
+        <p class="muted" id="done-summary"></p>
+        <label class="field">Имя<input id="c-name" class="input" type="text" placeholder="Как к вам обращаться"></label>
+        <label class="field">Телефон<input id="c-phone" class="input" type="tel" placeholder="+7 900 000-00-00"></label>
+        <p class="error" id="c-error"></p>
+        <button class="btn btn--light btn--wide" type="submit">Отправить заявку <span>→</span></button>
+        <p class="hint">Демо-сайт: заявка никуда не отправляется.</p>
+      </form>
+      <div class="done" id="done-ok">
+        <div class="done__icon">✓</div>
+        <h3>Заявка принята</h3>
+        <p class="muted">Перезвоним в течение 15 минут, чтобы подтвердить даты.</p>
+        <button class="btn btn--light" type="button" data-close>Хорошо</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
